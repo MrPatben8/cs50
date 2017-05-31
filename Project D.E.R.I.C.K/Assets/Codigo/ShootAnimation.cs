@@ -7,19 +7,20 @@ public class ShootAnimation : MonoBehaviour {
 	public Image Img;
 	public Sprite[] spr;
 	public float FrameInterval;
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(Input.GetMouseButtonDown(0)){
-			StartCoroutine(Shoot());
-		}
+
+	public AudioSource aud;
+	public AudioClip GunShot;
+
+	public void Shoot () {
+			StartCoroutine(Fire());
 	}
 
-	IEnumerator Shoot(){
+	IEnumerator Fire(){
+		if(aud.isPlaying){
+			aud.Stop();
+		}
+		aud.clip = GunShot;
+		aud.Play();
 		for(int i = 1; i < 6; i++){
 			Img.sprite = spr[i];
 			yield return new WaitForSeconds(FrameInterval);
