@@ -22,6 +22,7 @@ namespace UnityStandardAssets.Cameras
         [SerializeField] private Vector2 m_RotationRange;
         [SerializeField] private float m_FollowSpeed = 1;
 
+		public bool TargetMainCamera;
         private Vector3 m_FollowAngles;
         private Quaternion m_OriginalRotation;
 
@@ -31,6 +32,8 @@ namespace UnityStandardAssets.Cameras
         // Use this for initialization
         protected override void Start()
         {
+			if(TargetMainCamera)
+				m_Target = GameObject.FindGameObjectWithTag("MainCamera").transform;
             base.Start();
             m_OriginalRotation = transform.localRotation;
         }

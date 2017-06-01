@@ -45,12 +45,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AnimatedObject.cs" />
      <Compile Include="Assets\Codigo\Enemy.cs" />
      <Compile Include="Assets\Codigo\HeadLook.cs" />
      <Compile Include="Assets\Codigo\MusicSelector.cs" />
      <Compile Include="Assets\Codigo\RayShoot.cs" />
      <Compile Include="Assets\Codigo\ShootAnimation.cs" />
      <Compile Include="Assets\Codigo\TextrueAdjust.cs" />
+     <Compile Include="Assets\CollisionDetection.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />

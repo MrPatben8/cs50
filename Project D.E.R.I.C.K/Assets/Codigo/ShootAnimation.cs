@@ -8,20 +8,12 @@ public class ShootAnimation : MonoBehaviour {
 	public Sprite[] spr;
 	public float FrameInterval;
 
-	public AudioSource aud;
-	public AudioClip GunShot;
-
 	public void Shoot () {
 			StartCoroutine(Fire());
 	}
 
 	IEnumerator Fire(){
-		if(aud.isPlaying){
-			aud.Stop();
-		}
-		aud.clip = GunShot;
-		aud.Play();
-		for(int i = 1; i < 6; i++){
+		for(int i = 1; i < spr.Length; i++){
 			Img.sprite = spr[i];
 			yield return new WaitForSeconds(FrameInterval);
 		}
