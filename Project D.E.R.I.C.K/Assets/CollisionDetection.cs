@@ -16,6 +16,7 @@ public class CollisionDetection : MonoBehaviour {
 	void OnTriggerEnter(Collider col){
 		if(col.transform.name == "ShotgunPickup"){
 			transform.BroadcastMessage("Pickup", 2);
+			Destroy(col.transform.gameObject);
 		}
 	}
 	/*

@@ -9,6 +9,7 @@ public class RayShoot : MonoBehaviour {
 	public int SW;
 	public AudioSource aud;
 	public AudioClip EmptySound;
+	public AudioClip PickupSound;
 	public Transform[] spread;
 	public GameObject BulletHit;
 	public LayerMask lyrmsk;
@@ -31,6 +32,9 @@ public class RayShoot : MonoBehaviour {
 	}
 
 	public void Pickup (int item) {
+		if(aud.isPlaying){	aud.Stop();	}
+		aud.clip = PickupSound;
+		aud.Play();
 		if(item == 2){
 			Weapon[1].Available = true;
 			Switch(1);
@@ -181,7 +185,7 @@ public class RayShoot : MonoBehaviour {
 				hit.collider.transform.gameObject.SendMessage("TakeDamage", Weapon[SW].Damage);
 			}else{
 				GameObject bulhit =  (GameObject)Instantiate(BulletHit, hit.point, Quaternion.LookRotation(hit.normal));
-				bulhit.transform.position = new Vector3(bulhit.transform.position.x, bulhit.transform.position.y + 0.1f, bulhit.transform.position.z);
+				bulhit.transform.position = bulhit.transform.position + hit.normal/20;
 			}
 		}
 		if(SW == 1){
@@ -194,7 +198,7 @@ public class RayShoot : MonoBehaviour {
 						hit2.collider.transform.gameObject.SendMessage("TakeDamage", Weapon[SW].Damage);
 					}else{
 						GameObject bulhit =  (GameObject)Instantiate(BulletHit, hit2.point, Quaternion.LookRotation(hit2.normal));
-						bulhit.transform.position = new Vector3(bulhit.transform.position.x, bulhit.transform.position.y + 0.1f, bulhit.transform.position.z);
+						bulhit.transform.position = bulhit.transform.position + hit.normal/20;
 					}
 				}
 			}

@@ -53,6 +53,8 @@
      <Compile Include="Assets\Codigo\ShootAnimation.cs" />
      <Compile Include="Assets\Codigo\TextrueAdjust.cs" />
      <Compile Include="Assets\CollisionDetection.cs" />
+     <Compile Include="Assets\HUD.cs" />
+     <Compile Include="Assets\Health.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
