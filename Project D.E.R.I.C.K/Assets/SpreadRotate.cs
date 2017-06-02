@@ -9,6 +9,6 @@ public class SpreadRotate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-			transform.Rotate (0,0,30*Time.deltaTime); //rotates 50 degrees per second around z axis
+			gameObject.transform.Rotate (0,0,30*Time.deltaTime); 
 	}
 }
