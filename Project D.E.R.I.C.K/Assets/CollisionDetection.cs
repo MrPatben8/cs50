@@ -18,6 +18,10 @@ public class CollisionDetection : MonoBehaviour {
 			transform.BroadcastMessage("Pickup", 2);
 			Destroy(col.transform.gameObject);
 		}
+		if(col.transform.name == "SMGPickup"){
+			transform.BroadcastMessage("Pickup", 4);
+			Destroy(col.transform.gameObject);
+		}
 	}
 	/*
 		1: Pistol Ammo
@@ -26,5 +30,6 @@ public class CollisionDetection : MonoBehaviour {
 		4: SMG
 		5: SMG Ammo
 		6: Medkit
+		7: Armor
 	*/
 }

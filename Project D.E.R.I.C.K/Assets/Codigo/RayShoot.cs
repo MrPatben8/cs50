@@ -3,6 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class RayShoot : MonoBehaviour {
+	/*
+	1: Pistol Ammo
+	2: Shotgun
+	3: Shotgun Ammo
+	4: SMG
+	5: SMG Ammo
+	6: Medkit
+	7: Armor
+	*/
 
 	// Use this for initialization
 	public GameObject Canvas;	//This variable references the canvas where the guns are displayed
@@ -38,6 +47,10 @@ public class RayShoot : MonoBehaviour {
 		if(item == 2){
 			Weapon[1].Available = true;			//Unlocks gun and switches to it
 			Switch(1);
+		}
+		if(item == 4){
+			Weapon[2].Available = true;			//Unlocks gun and switches to it
+			Switch(2);
 		}
 			
 	}
