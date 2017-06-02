@@ -9,18 +9,28 @@ ModelImporter:
     100002: Mesh1
     100004: Mesh2
     100006: //RootNode
+    100008: Mesh3
+    100010: Train1
+    100012: Tunel1
     400000: Chris1
     400002: Mesh1
     400004: Mesh2
     400006: //RootNode
+    400008: Mesh3
+    400010: Train1
+    400012: Tunel1
     2300000: Mesh1
     2300002: Mesh2
+    2300004: Mesh3
     3300000: Mesh1
     3300002: Mesh2
+    3300004: Mesh3
     4300000: Mesh1
     4300002: Mesh2
+    4300004: Mesh3
     6400000: Mesh1
     6400002: Mesh2
+    6400004: Mesh3
   materials:
     importMaterials: 1
     materialName: 0
