@@ -1,0 +1,941 @@
+fileFormatVersion: 2
+guid: d6e568cdbee9d4997a1b486a3ce78577
+timeCreated: 1496439836
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sargesheet_0
+    21300002: Sargesheet_1
+    21300004: Sargesheet_2
+    21300006: Sargesheet_3
+    21300008: Sargesheet_4
+    21300010: Sargesheet_5
+    21300012: Sargesheet_6
+    21300014: Sargesheet_7
+    21300016: Sargesheet_8
+    21300018: Sargesheet_9
+    21300020: Sargesheet_10
+    21300022: Sargesheet_11
+    21300024: Sargesheet_12
+    21300026: Sargesheet_13
+    21300028: Sargesheet_14
+    21300030: Sargesheet_15
+    21300032: Sargesheet_16
+    21300034: Sargesheet_17
+    21300036: Sargesheet_18
+    21300038: Sargesheet_19
+    21300040: Sargesheet_20
+    21300042: Sargesheet_21
+    21300044: Sargesheet_22
+    21300046: Sargesheet_23
+    21300048: Sargesheet_24
+    21300050: Sargesheet_25
+    21300052: Sargesheet_26
+    21300054: Sargesheet_27
+    21300056: Sargesheet_28
+    21300058: Sargesheet_29
+    21300060: Sargesheet_30
+    21300062: Sargesheet_31
+    21300064: Sargesheet_32
+    21300066: Sargesheet_33
+    21300068: Sargesheet_34
+    21300070: Sargesheet_35
+    21300072: Sargesheet_36
+    21300074: Sargesheet_37
+    21300076: Sargesheet_38
+    21300078: Sargesheet_39
+    21300080: Sargesheet_40
+    21300082: Sargesheet_41
+    21300084: Sargesheet_42
+    21300086: Sargesheet_43
+    21300088: Sargesheet_44
+    21300090: Sargesheet_45
+    21300092: Sargesheet_46
+    21300094: Sargesheet_47
+    21300096: Sargesheet_48
+    21300098: Sargesheet_49
+    21300100: Sargesheet_50
+    21300102: Sargesheet_51
+    21300104: Sargesheet_52
+    21300106: Sargesheet_53
+    21300108: Sargesheet_54
+    21300110: Sargesheet_55
+    21300112: Sargesheet_56
+    21300114: Sargesheet_57
+    21300116: Sargesheet_58
+    21300118: Sargesheet_59
+    21300120: Sargesheet_60
+    21300122: Sargesheet_61
+    21300124: Sargesheet_62
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sargesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 262
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 263
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 264
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_3
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 267
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_4
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 266
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_5
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 262
+        width: 35
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_6
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 263
+        width: 27
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 261
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_8
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 263
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_9
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 263
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_10
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 262
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_11
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 263
+        width: 29
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 38
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_13
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 199
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_14
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 200
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 200
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_16
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 200
+        width: 28
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_17
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 200
+        width: 30
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_18
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 200
+        width: 38
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_19
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 200
+        width: 35
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_20
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 201
+        width: 26
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_21
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 200
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_22
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 201
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_23
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 201
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_25
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 137
+        width: 27
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_26
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 137
+        width: 43
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_27
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 137
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_28
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 137
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_29
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 137
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_30
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 136
+        width: 31
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_31
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 137
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_32
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 137
+        width: 43
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_33
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 137
+        width: 43
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_34
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 137
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_35
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 131
+        width: 33
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 83
+        width: 35
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.63573134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_37
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 84
+        width: 42
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.82963234}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_38
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 71
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_39
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 70
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_40
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 70
+        width: 48
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_41
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 110
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_42
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 111
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_43
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 104
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_44
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 103
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_45
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 106
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_46
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 97
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_47
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 83
+        width: 48
+        height: 27
+      alignment: 9
+      pivot: {x: 0.514139, y: 1.2791971}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_48
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 65
+        width: 53
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_49
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 101
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_50
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 100
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_51
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 92
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_52
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 84
+        width: 52
+        height: 17
+      alignment: 9
+      pivot: {x: 0.48694992, y: 1.9371526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_53
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 65
+        width: 55
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_54
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 86
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_55
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 39
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_56
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 46
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_57
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 44
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_58
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 37
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_59
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 11
+        width: 57
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 57
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_61
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 11
+        width: 57
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Sargesheet_62
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 11
+        width: 57
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

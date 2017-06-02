@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class RayShoot : MonoBehaviour {
 	/*
@@ -20,8 +21,12 @@ public class RayShoot : MonoBehaviour {
 	public AudioClip EmptySound;//This sound is played if the player runs out of ammo
 	public AudioClip PickupSound;//This sound is played when the player picks up a new gun
 	public Transform[] spread;	//This array contains all the positions where the shotgun will fire in
-	public GameObject BulletHit;//This is the gameobject that is spawned when the bullet hits a wall
+	public GameObject BulletHit;
+	public GameObject EnemyHit;//This is the gameobject that is spawned when the bullet hits a wall
 	public LayerMask lyrmsk;	//This is the layers that the raycast will ignore
+	public Text AmmoText;
+	public Image[] WeaponIndicator;
+	public Text WeaponText;
 
 	public List<WeaponInfo> Weapon;  //Creates struct of weapon types
 	[System.Serializable]
@@ -121,6 +126,12 @@ public class RayShoot : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		AmmoText.text = ""+Weapon[SW].Ammo+"/"+Weapon[SW].TotalAmmo;
+		WeaponText.text = ""+(SW + 1)+"/"+Weapon.Count;
+		for(int v=0; v < WeaponIndicator.Length; v++){
+			WeaponIndicator[v].gameObject.SetActive(false);
+		}
+		WeaponIndicator[SW].gameObject.SetActive(true);
 		if(Input.GetKeyDown(KeyCode.Alpha1)){	//Change to weapon 0 (Run Switch funcion) when the button 1 is pressed
 			Switch(0);
 		}
@@ -192,6 +203,8 @@ public class RayShoot : MonoBehaviour {
 		if (Physics.Raycast(ray, out hit, Mathf.Infinity, lyrmsk)){ //if the ray hits something output the data of that hit to the variable hit
 			if (hit.collider.transform.tag == "Enemy"){				//if the ray hits an object with tag Enemy then tell the Enemy to take damage
 				hit.collider.transform.gameObject.SendMessage("TakeDamage", Weapon[SW].Damage); //sends damage mesage to the gameobject of the collider that the ray hit
+				GameObject enhit =  (GameObject)Instantiate(EnemyHit, hit.point, Quaternion.LookRotation(hit.normal)); //if the ray hits anything else then spawn a bullet hole
+				enhit.transform.position = enhit.transform.position + hit.normal/20;
 			}else{
 				GameObject bulhit =  (GameObject)Instantiate(BulletHit, hit.point, Quaternion.LookRotation(hit.normal)); //if the ray hits anything else then spawn a bullet hole
 				bulhit.transform.position = bulhit.transform.position + hit.normal/20;	

@@ -10,6 +10,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         public NavMeshAgent agent { get; private set; }             // the navmesh agent required for the path finding
         public ThirdPersonCharacter character { get; private set; } // the character we are controlling
         public Transform target;                                    // target to aim for
+		public float DetectionRange;
+		public GameObject EnemySprite;
+		public bool Moving;
 
 
         private void Start()
@@ -27,11 +30,20 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             if (target != null)
                 agent.SetDestination(target.position);
-
-            if (agent.remainingDistance > agent.stoppingDistance)
-                character.Move(agent.desiredVelocity, false, false);
-            else
-                character.Move(Vector3.zero, false, false);
+			float dist = Vector3.Distance(transform.position, target.position);
+			if(dist < DetectionRange){
+				if (agent.remainingDistance > agent.stoppingDistance){
+           	    	 character.Move(agent.desiredVelocity, false, false);
+					EnemySprite.SendMessage("Animate", true);
+					BroadcastMessage("Moving", true);
+				}else{
+             		 character.Move(Vector3.zero, false, false);
+					EnemySprite.SendMessage("Animate", false);
+					BroadcastMessage("Moving", false);
+				}
+			}else{
+				EnemySprite.SendMessage("Animate", false);
+			}
         }
 
 
