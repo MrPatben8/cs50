@@ -25,6 +25,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 	        agent.updateRotation = false;
 	        agent.updatePosition = true;
 			oldspd = agent.speed;
+
+			if(target == null){
+				target = GameObject.FindGameObjectWithTag("Player").transform;
+			}
         }
 
 

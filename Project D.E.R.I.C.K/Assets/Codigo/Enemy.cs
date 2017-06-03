@@ -46,7 +46,7 @@ public class Enemy : MonoBehaviour {
 				}
 			}
 		}
-		yield return new WaitForSeconds(Random.Range(0.9f, 3f));
+		yield return new WaitForSeconds(Random.Range(2.5f, 5f));
 		if(Health > 0)
 			StartCoroutine(CycleFire());
 	}
