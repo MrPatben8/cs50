@@ -70,6 +70,7 @@ public class Enemy : MonoBehaviour {
 		Health -= dmg;
 		if(Health <= 0 && !dead){
 			BroadcastMessage("Die");
+			GetComponentInChildren<AudioSource>().mute = true;
 			dead=true;
 			gameObject.layer = 9;
 			gameObject.GetComponent<NavMeshAgent>().speed = 0;
