@@ -8,9 +8,14 @@ public class EnemyAnimator : MonoBehaviour {
 	public bool[] Animation;
 	public Sprite[] WalkForward;
 	public Sprite[] DeathAnim;
+	public Sprite ShootinSprite;
 	public SpriteRenderer rend;
 	public Sprite Static;
 	private bool dead = false;
+	private bool Shooting = false;
+	public AudioSource stepaud;
+	public AudioSource shotaud;
+	public AudioClip shot;
 	void Start () {
 		StartCoroutine(Anim());
 	}
@@ -24,15 +29,31 @@ public class EnemyAnimator : MonoBehaviour {
 			}
 		}
 		yield return new WaitForEndOfFrame();
-		rend.sprite = Static;
+		if(!Shooting)
+			rend.sprite = Static;
 		if(!dead)
 			StartCoroutine(Anim());
 	}
 
-	public void Animate(bool val){
-		Animation[0] = val;
+	public void ShotFired(){
+		StartCoroutine(AnimateFire());
 	}
 
+	IEnumerator AnimateFire(){
+		if(!dead){
+			Shooting = true;
+			rend.sprite = ShootinSprite;
+			if(shotaud.isPlaying)shotaud.Stop();	shotaud.clip = shot;	shotaud.Play();
+			yield return new WaitForSeconds(Fps*2);
+			Shooting = false;
+		}
+	}
+
+	public void Animate(bool val){
+		if(!dead){
+			Animation[0] = val;
+		}
+	}
 	public void Die(){
 		StartCoroutine(Death());
 	}

@@ -14,15 +14,17 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		public GameObject EnemySprite;
 		public bool Moving;
 
-
+		private float oldspd;
         private void Start()
         {
+
             // get the components on the object we need ( should not be null due to require component so no need to check )
             agent = GetComponentInChildren<NavMeshAgent>();
             character = GetComponent<ThirdPersonCharacter>();
 
 	        agent.updateRotation = false;
 	        agent.updatePosition = true;
+			oldspd = agent.speed;
         }
 
 
@@ -32,17 +34,32 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 agent.SetDestination(target.position);
 			float dist = Vector3.Distance(transform.position, target.position);
 			if(dist < DetectionRange){
-				if (agent.remainingDistance > agent.stoppingDistance){
-           	    	 character.Move(agent.desiredVelocity, false, false);
-					EnemySprite.SendMessage("Animate", true);
-					BroadcastMessage("Moving", true);
-				}else{
-             		 character.Move(Vector3.zero, false, false);
-					EnemySprite.SendMessage("Animate", false);
-					BroadcastMessage("Moving", false);
-				}
+				Moving = true;
+				EnemySprite.SendMessage("Animate", true);
+				agent.speed = oldspd;
+				BroadcastMessage("InRange");
 			}else{
+				Moving = false;
 				EnemySprite.SendMessage("Animate", false);
+				agent.speed = 0;
+			}
+
+			if(dist < DetectionRange && agent.remainingDistance > agent.stoppingDistance){
+				GetComponentInChildren<AudioSource>().mute = false;
+			}else{
+				GetComponentInChildren<AudioSource>().mute = true;
+			}
+
+			if (agent.remainingDistance > agent.stoppingDistance){
+				character.Move(agent.desiredVelocity, false, false);
+				EnemySprite.SendMessage("Animate", true);
+				BroadcastMessage("Moving", true);
+				gameObject.BroadcastMessage("ReadyFire", false);
+			}else{
+				character.Move(Vector3.zero, false, false);
+				EnemySprite.SendMessage("Animate", false);
+				BroadcastMessage("Moving", false);
+				gameObject.BroadcastMessage("ReadyFire", true);
 			}
         }
 

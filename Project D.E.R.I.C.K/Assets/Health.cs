@@ -14,4 +14,8 @@ public class Health : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	public void TakeDamage(int dmg){
+		HP -= dmg;
+	}
 }

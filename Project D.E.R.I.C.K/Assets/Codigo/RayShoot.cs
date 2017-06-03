@@ -218,6 +218,8 @@ public class RayShoot : MonoBehaviour {
 				if (Physics.Raycast(ray2, out hit2, Mathf.Infinity, lyrmsk)){
 					if (hit2.collider.transform.tag == "Enemy"){
 						hit2.collider.transform.gameObject.SendMessage("TakeDamage", Weapon[SW].Damage);
+						GameObject enhit =  (GameObject)Instantiate(EnemyHit, hit.point, Quaternion.LookRotation(hit.normal)); //if the ray hits anything else then spawn a bullet hole
+						enhit.transform.position = enhit.transform.position + hit.normal/20;
 					}else{
 						GameObject bulhit =  (GameObject)Instantiate(BulletHit, hit2.point, Quaternion.LookRotation(hit2.normal));
 						bulhit.transform.position = bulhit.transform.position + hit.normal/20;
