@@ -176,9 +176,10 @@ public class RayShoot : MonoBehaviour {
 			Weapon[SW].TotalAmmo -= (Weapon[SW].MagSize - Weapon[SW].Ammo);
 			Weapon[SW].Ammo += (Weapon[SW].MagSize - Weapon[SW].Ammo);
 		}
+		StartCoroutine(MoveUp());
+		yield return new WaitForSeconds(0.4f);
 		Weapon[SW].ReloadReady = true;
 		Weapon[SW].ShotReady = true;
-		StartCoroutine(MoveUp());
 	}
 
 	IEnumerator Fire(){

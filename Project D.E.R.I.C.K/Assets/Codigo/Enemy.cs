@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.Characters;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class Enemy : MonoBehaviour {
 
@@ -74,6 +76,7 @@ public class Enemy : MonoBehaviour {
 			dead=true;
 			gameObject.layer = 9;
 			gameObject.GetComponent<NavMeshAgent>().speed = 0;
+			gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.AICharacterControl>().enabled = false;
 			gameObject.GetComponent<BoxCollider>().enabled = false;
 			gameObject.GetComponent<CapsuleCollider>().enabled = false;
 		}
