@@ -56,6 +56,7 @@
      <Compile Include="Assets\EnemyAnimator.cs" />
      <Compile Include="Assets\HUD.cs" />
      <Compile Include="Assets\Health.cs" />
+     <Compile Include="Assets\LevelGenerator.cs" />
      <Compile Include="Assets\RandomObjectSelector.cs" />
      <Compile Include="Assets\Spawner.cs" />
      <Compile Include="Assets\SpreadRotate.cs" />
