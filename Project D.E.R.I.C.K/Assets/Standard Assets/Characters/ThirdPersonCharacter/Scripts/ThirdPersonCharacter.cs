@@ -78,6 +78,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 		void ScaleCapsuleForCrouching(bool crouch)
 		{
+			if(m_Rigidbody == null)
+				return;
 			if (m_IsGrounded && crouch)
 			{
 				if (m_Crouching) return;
@@ -102,6 +104,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 		void PreventStandingInLowHeadroom()
 		{
+			if(m_Rigidbody == null)
+				return;
 			// prevent standing up in crouch-only zones
 			if (!m_Crouching)
 			{
@@ -117,6 +121,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 		void UpdateAnimator(Vector3 move)
 		{
+			if(m_Rigidbody == null)
+				return;
 			// update the animator parameters
 			m_Animator.SetFloat("Forward", m_ForwardAmount, 0.1f, Time.deltaTime);
 			m_Animator.SetFloat("Turn", m_TurnAmount, 0.1f, Time.deltaTime);
@@ -157,9 +163,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		{
 			// apply extra gravity from multiplier:
 			Vector3 extraGravityForce = (Physics.gravity * m_GravityMultiplier) - Physics.gravity;
-			m_Rigidbody.AddForce(extraGravityForce);
-
-			m_GroundCheckDistance = m_Rigidbody.velocity.y < 0 ? m_OrigGroundCheckDistance : 0.01f;
+			if(m_Rigidbody != null)
+				m_Rigidbody.AddForce(extraGravityForce);
+			if(m_Rigidbody != null)
+				m_GroundCheckDistance = m_Rigidbody.velocity.y < 0 ? m_OrigGroundCheckDistance : 0.01f;
 		}
 
 
