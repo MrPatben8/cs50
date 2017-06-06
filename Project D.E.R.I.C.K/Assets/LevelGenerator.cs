@@ -6,8 +6,9 @@ public class LevelGenerator : MonoBehaviour {
 	// Use this for initialization
 	public GameObject NewLvl;
 	public GameObject OldLvl;
+	private BoxCollider cbox;
 	void Start () {
-		
+		cbox = GetComponent<BoxCollider>();
 	}
 	
 	// Update is called once per frame
@@ -19,6 +20,12 @@ public class LevelGenerator : MonoBehaviour {
 		if(col.transform.tag == "Player"){
 			OldLvl.SetActive(false);
 			NewLvl.SetActive(true);
+			StartCoroutine(Solidify());
 		}
+	}
+
+	IEnumerator Solidify(){
+		yield return new WaitForSeconds(5.0f);
+		cbox.isTrigger = false;
 	}
 }

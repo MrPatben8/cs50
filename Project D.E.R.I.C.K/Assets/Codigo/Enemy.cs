@@ -63,9 +63,6 @@ public class Enemy : MonoBehaviour {
 	void Update () {
 		Vector3 dir = (plyr.transform.position - transform.position).normalized;
 		Debug.DrawRay(transform.position, dir, Color.red);
-		if(!Move){
-			Debug.Log("Shoot");
-		}
 	}
 
 	public void TakeDamage(int dmg){
