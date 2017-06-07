@@ -1,9 +1,42 @@
 fileFormatVersion: 2
 guid: 1241e048477604f6ca3ef354a5282e7b
-timeCreated: 1496712576
+timeCreated: 1496777274
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Hacha_0
+    21300002: Hacha_1
+    21300004: Hacha_2
+    21300006: Hacha_3
+    21300008: Hacha_4
+    21300010: Hacha_5
+    21300012: Hacha_6
+    21300014: Hacha_7
+    21300016: Hacha_8
+    21300018: Hacha_9
+    21300020: Hacha_10
+    21300022: Hacha_11
+    21300024: Hacha_12
+    21300026: Hacha_13
+    21300028: Hacha_14
+    21300030: Hacha_15
+    21300032: Hacha_16
+    21300034: Hacha_17
+    21300036: Hacha_18
+    21300038: Hacha_19
+    21300040: Hacha_20
+    21300042: Hacha_21
+    21300044: Hacha_22
+    21300046: Hacha_23
+    21300048: Hacha_24
+    21300050: Hacha_25
+    21300052: Hacha_26
+    21300054: Hacha_27
+    21300056: Hacha_28
+    21300058: Hacha_29
+    21300060: Hacha_30
+    21300062: Hacha_31
+    21300064: Hacha_32
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -29,29 +62,458 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: -1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Hacha_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 290
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 303
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 303
+        width: 41
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_3
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 303
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 303
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_5
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 303
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_6
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 303
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_7
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 303
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_8
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 303
+        width: 30
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_9
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 290
+        width: 35
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_10
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 290
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_11
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 290
+        width: 19
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_12
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 290
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_13
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 290
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_14
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 290
+        width: 40
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_15
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 259
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_16
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 269
+        width: 82
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_17
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 259
+        width: 28
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 259
+        width: 27
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_19
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 239
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_20
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 239
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_21
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 239
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_22
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 239
+        width: 63
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_23
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 239
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_24
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 219
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_25
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 219
+        width: 41
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_26
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 219
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_27
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 219
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_28
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 219
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_29
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 18
+        width: 89
+        height: 160
+      alignment: 9
+      pivot: {x: 0.49165207, y: 0.0031464696}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_30
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 16
+        width: 89
+        height: 162
+      alignment: 9
+      pivot: {x: 0.5, y: 0.00928057}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_31
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 18
+        width: 93
+        height: 156
+      alignment: 9
+      pivot: {x: 0.49201095, y: -0.0048307395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hacha_32
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 17
+        width: 126
+        height: 134
+      alignment: 9
+      pivot: {x: 0.5176895, y: 0.006542533}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 

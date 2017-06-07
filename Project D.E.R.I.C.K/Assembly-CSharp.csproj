@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\AnimatedObject.cs" />
+     <Compile Include="Assets\Barricada.cs" />
      <Compile Include="Assets\Codigo\Enemy.cs" />
      <Compile Include="Assets\Codigo\HeadLook.cs" />
      <Compile Include="Assets\Codigo\MusicSelector.cs" />

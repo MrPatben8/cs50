@@ -9,6 +9,7 @@ public class LevelGenerator : MonoBehaviour {
 	private BoxCollider cbox;
 	void Start () {
 		cbox = GetComponent<BoxCollider>();
+		NewLvl.SetActive(false);
 	}
 	
 	// Update is called once per frame
