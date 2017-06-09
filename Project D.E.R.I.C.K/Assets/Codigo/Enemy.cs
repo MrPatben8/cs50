@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour {
 	private GameObject plyr;
 	private bool fire;
 	private bool inrange;
+	public GameObject Head;
 	void Start () {
 		tempAcu = Acuracy;
 		if(Acuracy > 100)
@@ -31,8 +32,8 @@ public class Enemy : MonoBehaviour {
 	IEnumerator CycleFire(){
 		if(inrange){
 			RaycastHit hit;
-			Vector3 dir = (plyr.transform.position - transform.position).normalized;
-			Ray ray = new Ray(transform.position, dir);
+			Vector3 dir = (Head.transform.forward - Head.transform.position).normalized;
+			Ray ray = new Ray(Head.transform.position, dir);
 			if (Physics.Raycast(ray, out hit, Mathf.Infinity)){
 				if (hit.collider.transform.tag == "Player"){
 					BroadcastMessage("ShotFired");
@@ -45,6 +46,7 @@ public class Enemy : MonoBehaviour {
 						hit.collider.transform.gameObject.SendMessage("TakeDamage", Random.Range(LowDamage, HiDamage)); 
 				}
 			}
+			Debug.Log (hit.transform.name);
 		}
 		yield return new WaitForSeconds(Random.Range(2.5f, 5f));
 		if(Health > 0)
@@ -62,7 +64,7 @@ public class Enemy : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Vector3 dir = (plyr.transform.position - transform.position).normalized;
-		Debug.DrawRay(transform.position, dir, Color.red);
+		Debug.DrawRay(Head.transform.position, Head.transform.forward*50, Color.red);
 	}
 
 	public void TakeDamage(int dmg){
