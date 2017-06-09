@@ -55,12 +55,12 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			}
 
 			if (agent.remainingDistance > agent.stoppingDistance){
-				character.Move(agent.desiredVelocity, false, false);
+				//character.Move(agent.desiredVelocity, false, false);
 				EnemySprite.SendMessage("Animate", true);
 				BroadcastMessage("Moving", true);
 				gameObject.BroadcastMessage("ReadyFire", false);
 			}else{
-				character.Move(Vector3.zero, false, false);
+				//character.Move(Vector3.zero, false, false);
 				EnemySprite.SendMessage("Animate", false);
 				BroadcastMessage("Moving", false);
 				gameObject.BroadcastMessage("ReadyFire", true);
