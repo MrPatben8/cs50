@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour {
 
@@ -11,11 +12,21 @@ public class PauseMenu : MonoBehaviour {
 	public AudioSource aud;
 	private AudioClip tempsong;
 	private float temptime;
+	private float pausetime = 3.5f;
 	void Start () {
 		//aud = GetComponent<AudioSource> ();
 		//tempsong = aud.clip;
 	}
-	
+
+	public void ChangePause(){
+		Paused = !Paused;
+	}
+
+	public void Restart(){
+		SceneManager.UnloadScene ("Main");
+		SceneManager.LoadScene ("Main");
+	}
+
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Escape))
@@ -27,12 +38,16 @@ public class PauseMenu : MonoBehaviour {
 				temptime = aud.time;
 				aud.Stop ();
 				aud.clip = Song;
+				aud.time = pausetime;
 				aud.Play ();
 			}
 			Menu.SetActive (true);
+			Cursor.visible = true;
+			Cursor.lockState = CursorLockMode.None;
 		} else {
 			Time.timeScale = 1.0f;
 			if (aud.clip == Song) {
+				pausetime = aud.time;
 				aud.Stop ();
 				aud.clip = tempsong;
 				aud.time = temptime;
