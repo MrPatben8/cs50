@@ -1,0 +1,997 @@
+fileFormatVersion: 2
+guid: affe50deb12c745f99c449ad4039ab69
+timeCreated: 1497307114
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Armored_0
+    21300002: Armored_1
+    21300004: Armored_2
+    21300006: Armored_3
+    21300008: Armored_4
+    21300010: Armored_5
+    21300012: Armored_6
+    21300014: Armored_7
+    21300016: Armored_8
+    21300018: Armored_9
+    21300020: Armored_10
+    21300022: Armored_11
+    21300024: Armored_12
+    21300026: Armored_13
+    21300028: Armored_14
+    21300030: Armored_15
+    21300032: Armored_16
+    21300034: Armored_17
+    21300036: Armored_18
+    21300038: Armored_19
+    21300040: Armored_20
+    21300042: Armored_21
+    21300044: Armored_22
+    21300046: Armored_23
+    21300048: Armored_24
+    21300050: Armored_25
+    21300052: Armored_26
+    21300054: Armored_27
+    21300056: Armored_28
+    21300058: Armored_29
+    21300060: Armored_30
+    21300062: Armored_31
+    21300064: Armored_32
+    21300066: Armored_33
+    21300068: Armored_34
+    21300070: Armored_35
+    21300072: Armored_36
+    21300074: Armored_37
+    21300076: Armored_38
+    21300078: Armored_39
+    21300080: Armored_40
+    21300082: Armored_41
+    21300084: Armored_42
+    21300086: Armored_43
+    21300088: Armored_44
+    21300090: Armored_45
+    21300092: Armored_46
+    21300094: Armored_47
+    21300096: Armored_48
+    21300098: Armored_49
+    21300100: Armored_50
+    21300102: Armored_51
+    21300104: Armored_52
+    21300106: Armored_53
+    21300108: Armored_54
+    21300110: Armored_55
+    21300112: Armored_56
+    21300114: Armored_57
+    21300116: Armored_58
+    21300118: Armored_59
+    21300120: Armored_60
+    21300122: Armored_61
+    21300124: Armored_62
+    21300126: Armored_63
+    21300128: Armored_64
+    21300130: Armored_65
+    21300132: Armored_66
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 110
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Armored_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 249
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 249
+        width: 45
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 249
+        width: 46
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 249
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_4
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 249
+        width: 34
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_5
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 249
+        width: 33
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_6
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 250
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_7
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 251
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_8
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 251
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_9
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 251
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_10
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 190
+        width: 40
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_11
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 247
+        width: 46
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52279663}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_12
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 248
+        width: 53
+        height: 58
+      alignment: 9
+      pivot: {x: 0.44752473, y: 0.5479515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_13
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 246
+        width: 52
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6576007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_14
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 187
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_15
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 187
+        width: 38
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_16
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 187
+        width: 35
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_17
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 187
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_18
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 187
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 187
+        width: 51
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_20
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 188
+        width: 40
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_21
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 187
+        width: 48
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_22
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 188
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_23
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 196
+        width: 53
+        height: 36
+      alignment: 9
+      pivot: {x: 0.6224423, y: 0.8734}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_24
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 197
+        width: 51
+        height: 29
+      alignment: 9
+      pivot: {x: 0.6545099, y: 1.0914017}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_25
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 201
+        width: 49
+        height: 19
+      alignment: 9
+      pivot: {x: 0.61351794, y: 1.5734406}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_26
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 126
+        width: 43
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_27
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 125
+        width: 36
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_28
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 126
+        width: 38
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_29
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 126
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_30
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 126
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_31
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 126
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_32
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 126
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_33
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 123
+        width: 57
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_34
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 123
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_35
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 128
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_36
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 162
+        width: 41
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_37
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 170
+        width: 44
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_38
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 173
+        width: 41
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_39
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 66
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_40
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 66
+        width: 41
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_41
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 66
+        width: 41
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_42
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 66
+        width: 39
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_43
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 66
+        width: 47
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_44
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 66
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_45
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 66
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_46
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 63
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_47
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 63
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_48
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 66
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_49
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 108
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_50
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 94
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_51
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 73
+        width: 42
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_52
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 24
+        width: 46
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_53
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 6
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_54
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 7
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_55
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 7
+        width: 41
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_56
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 7
+        width: 44
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_57
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 7
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_58
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 7
+        width: 28
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_59
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 7
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_60
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 3
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_61
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 3
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_62
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 3
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_63
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 36
+        width: 36
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_64
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 57
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_65
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 6
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armored_66
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 9
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

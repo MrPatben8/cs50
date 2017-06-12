@@ -16,6 +16,9 @@ public class EnemyAnimator : MonoBehaviour {
 	public AudioSource stepaud;
 	public AudioSource shotaud;
 	public AudioClip shot;
+
+	private Vector3 oldpos;
+	private Vector3 newpos;
 	void Start () {
 		StartCoroutine(Anim());
 	}
@@ -23,6 +26,18 @@ public class EnemyAnimator : MonoBehaviour {
 	void Update(){
 		if (Time.timeScale == 0)
 			stepaud.mute = true;
+
+		newpos = transform.position;
+		if (Vector3.Distance (oldpos, newpos) < 0.01f && !dead) {
+			Animation [0] = false;
+			stepaud.mute = true;
+		} else {
+			Animation [0] = true;
+			stepaud.mute = false;
+		}
+		if (dead)
+			stepaud.mute = true;
+		oldpos = newpos;
 	}
 
 	// Update is called once per frame
@@ -56,7 +71,7 @@ public class EnemyAnimator : MonoBehaviour {
 
 	public void Animate(bool val){
 		if(!dead){
-			Animation[0] = val;
+			//Animation[0] = val;
 		}
 	}
 	public void Die(){

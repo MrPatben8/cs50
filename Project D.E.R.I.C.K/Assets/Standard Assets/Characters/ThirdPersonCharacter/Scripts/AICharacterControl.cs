@@ -49,9 +49,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			}
 
 			if(dist < DetectionRange && agent.remainingDistance > agent.stoppingDistance){
-				GetComponentInChildren<AudioSource>().mute = false;
+				//GetComponentInChildren<AudioSource>().mute = false;
 			}else{
-				GetComponentInChildren<AudioSource>().mute = true;
+				//GetComponentInChildren<AudioSource>().mute = true;
 			}
 
 			if (agent.remainingDistance > agent.stoppingDistance){
