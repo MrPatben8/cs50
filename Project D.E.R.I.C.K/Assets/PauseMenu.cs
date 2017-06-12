@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class PauseMenu : MonoBehaviour {
 
@@ -12,7 +13,8 @@ public class PauseMenu : MonoBehaviour {
 	public AudioSource aud;
 	private AudioClip tempsong;
 	private float temptime;
-	private float pausetime = 3.5f;
+	private float pausetime = 5.0f;
+	public AudioMixer mixer;
 	void Start () {
 		//aud = GetComponent<AudioSource> ();
 		//tempsong = aud.clip;
@@ -41,6 +43,7 @@ public class PauseMenu : MonoBehaviour {
 				aud.time = pausetime;
 				aud.Play ();
 			}
+			mixer.SetFloat ("SFXGain", 0.0f);
 			Menu.SetActive (true);
 			Cursor.visible = true;
 			Cursor.lockState = CursorLockMode.None;

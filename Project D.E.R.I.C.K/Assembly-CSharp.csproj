@@ -64,6 +64,7 @@
      <Compile Include="Assets\Spawner.cs" />
      <Compile Include="Assets\SpreadRotate.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\GUNUI.shader" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
      <None Include="Assets\SpritesDefaultModded.shader" />
