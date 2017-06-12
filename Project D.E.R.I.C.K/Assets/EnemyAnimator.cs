@@ -20,6 +20,11 @@ public class EnemyAnimator : MonoBehaviour {
 		StartCoroutine(Anim());
 	}
 
+	void Update(){
+		if (Time.timeScale == 0)
+			stepaud.mute = true;
+	}
+
 	// Update is called once per frame
 	IEnumerator Anim(){
 		if(Animation[0]){
