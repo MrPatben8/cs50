@@ -23,6 +23,7 @@ public class Enemy : MonoBehaviour {
 	private RaycastHit hit;
 	private float shotintlow;
 	private float shotinthi;
+	public LayerMask Penetration;
 
 	public float DifficultyLevel;
 	public float MaxDifficultyDistance = 100;
@@ -56,7 +57,7 @@ public class Enemy : MonoBehaviour {
 			//RaycastHit hit;
 			Vector3 dir = (HeadAim.transform.position - Head.transform.position).normalized;
 			Ray ray = new Ray(Head.transform.position, dir/*Head.transform.forward*/);
-			if (Physics.Raycast(ray, out hit, Mathf.Infinity)){
+			if (Physics.Raycast(ray, out hit, Mathf.Infinity, Penetration)){
 				if (hit.collider.transform.tag == "Player"){
 					BroadcastMessage("ShotFired");
 					float accu = Random.Range(0.01f, 99.9f);
