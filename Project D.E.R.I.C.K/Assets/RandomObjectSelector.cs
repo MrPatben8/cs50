@@ -8,7 +8,7 @@ public class RandomObjectSelector : MonoBehaviour {
 	public GameObject tempMesh;
 	void Start () {
 		int n = Random.Range(0, Objects.Length);
-		Instantiate(Objects[n], tempMesh.transform.position, transform.rotation, transform);
+		Instantiate(Objects[n], tempMesh.transform.position, transform.localRotation, transform);
 		Destroy(tempMesh);
 	}
 	

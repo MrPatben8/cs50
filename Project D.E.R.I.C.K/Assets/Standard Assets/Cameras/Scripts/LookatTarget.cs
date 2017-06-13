@@ -20,9 +20,10 @@ namespace UnityStandardAssets.Cameras
         // to have no constraints on an axis, set the rotationRange greater than 360.
 
         [SerializeField] private Vector2 m_RotationRange;
-        [SerializeField] private float m_FollowSpeed = 1;
+		[SerializeField] public float m_FollowSpeed = 1;
 
 		public bool TargetMainCamera;
+		public bool TargetPlayer;
         private Vector3 m_FollowAngles;
         private Quaternion m_OriginalRotation;
 
@@ -34,6 +35,8 @@ namespace UnityStandardAssets.Cameras
         {
 			if(TargetMainCamera)
 				m_Target = GameObject.FindGameObjectWithTag("MainCamera").transform;
+			if(TargetPlayer)
+				m_Target = GameObject.FindGameObjectWithTag("Player").transform;
             base.Start();
             m_OriginalRotation = transform.localRotation;
         }

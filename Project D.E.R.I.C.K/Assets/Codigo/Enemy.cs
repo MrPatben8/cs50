@@ -2,6 +2,8 @@
 using System.Collections;
 using UnityStandardAssets.Characters;
 using UnityStandardAssets.CrossPlatformInput;
+using UnityStandardAssets.Cameras;
+using System.Collections.Generic;
 
 public class Enemy : MonoBehaviour {
 
@@ -16,6 +18,28 @@ public class Enemy : MonoBehaviour {
 	private GameObject plyr;
 	private bool fire;
 	private bool inrange;
+	public GameObject Head;
+	public GameObject HeadAim;
+	private RaycastHit hit;
+	private float shotintlow;
+	private float shotinthi;
+	public LayerMask Penetration;
+
+	public float DifficultyLevel;
+	public float MaxDifficultyDistance = 100;
+	public List<Diffy> Difficulty;  
+	[System.Serializable]
+	public class Diffy{
+		public float MinAcuracy = 50;
+		public float MaxAcuracy = 100;
+		public float MinAimSpeed = 0.5f;
+		public float MaxAimSpeed = 0.90f;
+		public float MinMoveSpeed = 5.0f;
+		public float MaxMoveSpeed = 8.0f;
+		public float MinShotInterval =0.5f;
+		public float MaxShotInterval =4.0f;
+	}
+
 	void Start () {
 		tempAcu = Acuracy;
 		if(Acuracy > 100)
@@ -30,10 +54,10 @@ public class Enemy : MonoBehaviour {
 
 	IEnumerator CycleFire(){
 		if(inrange){
-			RaycastHit hit;
-			Vector3 dir = (plyr.transform.position - transform.position).normalized;
-			Ray ray = new Ray(transform.position, dir);
-			if (Physics.Raycast(ray, out hit, Mathf.Infinity)){
+			//RaycastHit hit;
+			Vector3 dir = (HeadAim.transform.position - Head.transform.position).normalized;
+			Ray ray = new Ray(Head.transform.position, dir/*Head.transform.forward*/);
+			if (Physics.Raycast(ray, out hit, Mathf.Infinity, Penetration)){
 				if (hit.collider.transform.tag == "Player"){
 					BroadcastMessage("ShotFired");
 					float accu = Random.Range(0.01f, 99.9f);
@@ -45,8 +69,9 @@ public class Enemy : MonoBehaviour {
 						hit.collider.transform.gameObject.SendMessage("TakeDamage", Random.Range(LowDamage, HiDamage)); 
 				}
 			}
+			Debug.Log (hit.transform.name);
 		}
-		yield return new WaitForSeconds(Random.Range(2.5f, 5f));
+		yield return new WaitForSeconds(Random.Range(shotintlow, shotinthi));
 		if(Health > 0)
 			StartCoroutine(CycleFire());
 	}
@@ -61,8 +86,10 @@ public class Enemy : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		Vector3 dir = (plyr.transform.position - transform.position).normalized;
-		Debug.DrawRay(transform.position, dir, Color.red);
+		CalculateDifficulty ();
+		Vector3 dir = (HeadAim.transform.position - Head.transform.position).normalized;
+		Debug.DrawRay(Head.transform.position, /*Head.transform.forward*10*/dir*20, Color.magenta);
+		Debug.DrawLine (Head.transform.position, hit.point, Color.cyan);
 	}
 
 	public void TakeDamage(int dmg){
@@ -77,5 +104,15 @@ public class Enemy : MonoBehaviour {
 			gameObject.GetComponent<BoxCollider>().enabled = false;
 			gameObject.GetComponent<CapsuleCollider>().enabled = false;
 		}
+	}
+
+	void CalculateDifficulty(){
+		DifficultyLevel = (Vector3.Distance (transform.position, Vector3.zero) / MaxDifficultyDistance);
+
+		shotintlow = Difficulty [0].MinShotInterval / (1.0f-DifficultyLevel);
+		shotinthi = Difficulty [0].MaxShotInterval / (1.0f-DifficultyLevel);
+		Acuracy = (Difficulty [0].MaxAcuracy - Difficulty [0].MinAcuracy) * DifficultyLevel + Difficulty [0].MinAcuracy;
+		Head.GetComponent<LookatTarget> ().m_FollowSpeed = (Difficulty[0].MaxAimSpeed - Difficulty[0].MinAimSpeed)*DifficultyLevel + Difficulty[0].MinAimSpeed;
+		gameObject.GetComponent<NavMeshAgent> ().speed = (Difficulty[0].MaxMoveSpeed - Difficulty[0].MinMoveSpeed)*DifficultyLevel + Difficulty[0].MaxMoveSpeed;
 	}
 }

@@ -126,6 +126,12 @@ public class RayShoot : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		if (Time.timeScale == 0)
+			aud.Pause ();
+		else
+			aud.UnPause ();
+		if(Time.timeScale == 0)
+			return;
 		AmmoText.text = ""+Weapon[SW].Ammo+"/"+Weapon[SW].TotalAmmo;
 		WeaponText.text = ""+(SW + 1)+"/"+Weapon.Count;
 		for(int v=0; v < WeaponIndicator.Length; v++){
