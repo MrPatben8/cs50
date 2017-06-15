@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AnimatedObject.cs" />
+    <Compile Include="Assets\Barricada.cs" />
     <Compile Include="Assets\Codigo\Enemy.cs" />
     <Compile Include="Assets\Codigo\HeadLook.cs" />
     <Compile Include="Assets\Codigo\MusicSelector.cs" />
@@ -84,11 +85,14 @@
     <Compile Include="Assets\HUD.cs" />
     <Compile Include="Assets\Health.cs" />
     <Compile Include="Assets\LevelGenerator.cs" />
+    <Compile Include="Assets\PauseMenu.cs" />
     <Compile Include="Assets\RandomObjectSelector.cs" />
+    <Compile Include="Assets\Settings.cs" />
     <Compile Include="Assets\Spawner.cs" />
     <Compile Include="Assets\SpreadRotate.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\GUNUI.shader" />
     <None Include="Assets\SpritesDefaultModded.shader" />
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
