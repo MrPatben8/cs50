@@ -36,7 +36,7 @@ namespace UnityStandardAssets.Cameras
 			if(TargetMainCamera)
 				m_Target = GameObject.FindGameObjectWithTag("MainCamera").transform;
 			if(TargetPlayer)
-				m_Target = GameObject.FindGameObjectWithTag("Player").transform;
+				m_Target = GameObject.FindGameObjectWithTag("Finish").transform;
             base.Start();
             m_OriginalRotation = transform.localRotation;
         }
