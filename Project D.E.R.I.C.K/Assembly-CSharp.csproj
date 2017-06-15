@@ -54,6 +54,7 @@
      <Compile Include="Assets\Codigo\ShootAnimation.cs" />
      <Compile Include="Assets\Codigo\TextrueAdjust.cs" />
      <Compile Include="Assets\CollisionDetection.cs" />
+     <Compile Include="Assets\DuckAndDeath.cs" />
      <Compile Include="Assets\EnemyAnimator.cs" />
      <Compile Include="Assets\HUD.cs" />
      <Compile Include="Assets\Health.cs" />
