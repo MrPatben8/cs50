@@ -1,10 +1,14 @@
 fileFormatVersion: 2
 guid: 4e9861ca197a9431c83a3fe65eeabe58
-timeCreated: 1496252987
+timeCreated: 1497395367
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: HDpickupsshowcase_0
+    21300002: HDpickupsshowcase_1
+    21300004: HDpickupsshowcase_2
+    21300006: HDpickupsshowcase_3
+    21300008: HDpickupsshowcase_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -61,6 +65,58 @@ TextureImporter:
         y: 508
         width: 258
         height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HDpickupsshowcase_1
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 190
+        width: 64
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HDpickupsshowcase_2
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 196
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HDpickupsshowcase_3
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 397
+        width: 117
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HDpickupsshowcase_4
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 57
+        width: 75
+        height: 58
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
