@@ -11,7 +11,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
     public class FirstPersonController : MonoBehaviour
     {
         [SerializeField] private bool m_IsWalking;
-        [SerializeField] private float m_WalkSpeed;
+		[SerializeField] private float m_WalkSpeed;
         [SerializeField] private float m_RunSpeed;
         [SerializeField] [Range(0f, 1f)] private float m_RunstepLenghten;
         [SerializeField] private float m_JumpSpeed;
@@ -28,6 +28,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
+		public float NewWalkSpeed = 8;
         private Camera m_Camera;
         private bool m_Jump;
         private float m_YRotation;
@@ -45,6 +46,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Use this for initialization
         private void Start()
         {
+			NewWalkSpeed = m_WalkSpeed;
             m_CharacterController = GetComponent<CharacterController>();
 			m_Camera = Camera.main;
             m_OriginalCameraPosition = m_Camera.transform.localPosition;
@@ -83,6 +85,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 m_MoveDir.y = 0f;
             }
+
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
         }
@@ -147,6 +150,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void ProgressStepCycle(float speed)
         {
+
             if (m_CharacterController.velocity.sqrMagnitude > 0 && (m_Input.x != 0 || m_Input.y != 0))
             {
                 m_StepCycle += (m_CharacterController.velocity.magnitude + (speed*(m_IsWalking ? 1f : m_RunstepLenghten)))*
@@ -183,6 +187,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void UpdateCameraPosition(float speed)
         {
+
             Vector3 newCameraPosition;
             if (!m_UseHeadBob)
             {
@@ -207,6 +212,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void GetInput(out float speed)
         {
+
             // Read input
             float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
             float vertical = CrossPlatformInputManager.GetAxis("Vertical");
@@ -219,7 +225,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_IsWalking = !Input.GetKey(KeyCode.LeftShift);
 #endif
             // set the desired speed to be walking or running
-            speed = m_IsWalking ? m_WalkSpeed : m_RunSpeed;
+			if (Input.GetKey (KeyCode.LeftControl)) {
+				//nothin
+				speed = NewWalkSpeed;
+			} else {
+				speed = m_IsWalking ? NewWalkSpeed : m_RunSpeed;
+			}
             m_Input = new Vector2(horizontal, vertical);
 
             // normalize input if it exceeds 1 in combined length:

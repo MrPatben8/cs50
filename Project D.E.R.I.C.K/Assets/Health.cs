@@ -21,7 +21,7 @@ public class Health : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		if (HP >= 90) {
 			for (int i = 0; i < DamageUI.Length; i++) {
 				Color col1 = DamageUI [i].color;
