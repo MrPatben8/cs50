@@ -16,6 +16,8 @@ public class EnemyAnimator : MonoBehaviour {
 	public AudioSource stepaud;
 	public AudioSource shotaud;
 	public AudioClip shot;
+	public AudioClip Died;
+	private bool Diededed = true;
 
 	private Vector3 oldpos;
 	private Vector3 newpos;
@@ -35,8 +37,14 @@ public class EnemyAnimator : MonoBehaviour {
 			Animation [0] = true;
 			stepaud.mute = false;
 		}
-		if (dead)
-			stepaud.mute = true;
+		if (dead) {
+			stepaud.loop = false;
+			stepaud.clip = Died;
+			if (Diededed) {
+				stepaud.Play ();
+				Diededed = false;
+			}
+		}
 		oldpos = newpos;
 	}
 

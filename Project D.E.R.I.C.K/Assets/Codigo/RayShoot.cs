@@ -20,6 +20,7 @@ public class RayShoot : MonoBehaviour {
 	public AudioSource aud;		//This is the audiosource where all the gun sounds are played through
 	public AudioClip EmptySound;//This sound is played if the player runs out of ammo
 	public AudioClip PickupSound;//This sound is played when the player picks up a new gun
+	public AudioClip DyingSound;
 	public Transform[] spread;	//This array contains all the positions where the shotgun will fire in
 	public GameObject BulletHit;
 	public GameObject EnemyHit;//This is the gameobject that is spawned when the bullet hits a wall
@@ -27,6 +28,8 @@ public class RayShoot : MonoBehaviour {
 	public Text AmmoText;
 	public Image[] WeaponIndicator;
 	public Text WeaponText;
+	private Health lieben;
+	private bool Ded = true;
 
 	public List<WeaponInfo> Weapon;  //Creates struct of weapon types
 	[System.Serializable]
@@ -43,6 +46,10 @@ public class RayShoot : MonoBehaviour {
 		public bool ReloadReady = true; //is the gun reloading?
 		public AudioClip ShootSound;	//Shooting sound audio
 		public AudioClip ReloadSound;	//reloadid sound audio
+	}
+
+	void Start(){
+		lieben = transform.parent.parent.GetComponent<Health> ();
 	}
 
 	public void Pickup (int item) {				//funcion that unlocks a new weapon when called and automatically selects that weapon
@@ -126,6 +133,15 @@ public class RayShoot : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		if (lieben.HP <= 0 && Ded) {
+			Ded = false;
+			Weapon [SW].ShotReady = false;
+			Weapon [SW].ReloadReady = false;
+			StartCoroutine (MoveDown ());
+			aud.clip = DyingSound;
+			aud.Play ();
+		}
+
 		if (Time.timeScale == 0)
 			aud.Pause ();
 		else
