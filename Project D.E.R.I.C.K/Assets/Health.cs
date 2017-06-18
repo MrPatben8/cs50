@@ -15,6 +15,8 @@ public class Health : MonoBehaviour {
 	public Image[] DamageUI;
 	public GameObject DeathText;
 	public GameObject UiHud;
+    public int heil = 15;   //casi significa curación que es "heilen" XD
+    public int SHIELD = 20; // es lo que se aniade al escudo
 	void Start () {
 		aud = GetComponent<AudioSource>();
 		DeathText.SetActive (false);
@@ -68,11 +70,50 @@ public class Health : MonoBehaviour {
 	}
 
 	public void TakeDamage(int dmg){
-		HP -= dmg;
-		if(aud.isPlaying){aud.Stop();}
+        if (SH > 0)
+        {
+            if (SH - dmg >= 0)
+            {
+                SH -= dmg;
+            }
+            else
+            {
+                SH -= dmg;
+                HP += SH;
+                SH = 0;
+            }
+
+        }
+            else { HP -= dmg; }
+
+        if (aud.isPlaying){aud.Stop();}
 		if (OneDead) {
 			aud.clip = DamageSound;
 			aud.Play ();
 		}
 	}
+    public void WeNeedHealing(int item)
+    {
+        if (item == 6)
+        {
+            if (HP + heil <= 100)
+            {
+                HP += heil;
+            }else
+                {
+                HP = 100;
+                }
+        }
+        if(item == 7)
+        {
+            if(SH + SHIELD <= 100)
+            {
+                SH += SHIELD;
+            }else
+                {
+                SH = 100;
+                }
+        }
+    }
+
 }

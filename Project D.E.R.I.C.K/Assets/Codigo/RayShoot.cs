@@ -30,6 +30,10 @@ public class RayShoot : MonoBehaviour {
 	public Text WeaponText;
 	private Health lieben;
 	private bool Ded = true;
+    public int PistolAmmoSum = 25;
+    public int ShotgunAmmoSum = 5;
+    public int SMGAmmoSum = 10;
+    
 
 	public List<WeaponInfo> Weapon;  //Creates struct of weapon types
 	[System.Serializable]
@@ -52,16 +56,32 @@ public class RayShoot : MonoBehaviour {
 		lieben = transform.parent.parent.GetComponent<Health> ();
 	}
 
-	public void Pickup (int item) {				//funcion that unlocks a new weapon when called and automatically selects that weapon
+    public void MoreAmmoPlease(int item){
+
+        if (item == 1)                       //gives ammo to Pistol
+        { Weapon[0].TotalAmmo += PistolAmmoSum;          
+        }
+        if(item == 3)                       //gives ammo to Shotgun
+        {
+          Weapon[1].TotalAmmo += ShotgunAmmoSum;
+        }
+        if (item == 5)                      //gives ammo to SMG
+        {
+           Weapon[2].TotalAmmo += SMGAmmoSum;
+        }
+        
+    }
+
+    public void Pickup (int item) {				//funcion that unlocks a new weapon when called and automatically selects that weapon
 		if(aud.isPlaying){	aud.Stop();	}		//}
 		aud.clip = PickupSound;					// Plays a gun unlocked sound
 		aud.Play();								//}
 		if(item == 2){
-			Weapon[1].Available = true;			//Unlocks gun and switches to it
+			Weapon[1].Available = true;			//Unlocks Shotgun and switches to it
 			Switch(1);
 		}
 		if(item == 4){
-			Weapon[2].Available = true;			//Unlocks gun and switches to it
+			Weapon[2].Available = true;			//Unlocks SMG and switches to it
 			Switch(2);
 		}
 			

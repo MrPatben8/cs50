@@ -22,7 +22,32 @@ public class CollisionDetection : MonoBehaviour {
 			transform.BroadcastMessage("Pickup", 4);
 			Destroy(col.transform.gameObject);
 		}
-	}
+        if(col.transform.name == "PistolAmmo"){
+            transform.BroadcastMessage("MoreAmmoPlease", 1);
+            Destroy(col.transform.gameObject);
+        }
+        if (col.transform.name == "ShotgunAmmo")
+        {
+            transform.BroadcastMessage("MoreAmmoPlease", 3);
+            Destroy(col.transform.gameObject);
+        }
+        if (col.transform.name == "SMGAmmo")
+        {
+            transform.BroadcastMessage("MoreAmmoPlease", 5);
+            Destroy(col.transform.gameObject);
+        }
+        if (col.transform.name == "HealthPack")
+        {
+            transform.BroadcastMessage("WeNeedHealing", 6);
+            Destroy(col.transform.gameObject);
+        }
+        if (col.transform.name == "ArmorPack")
+        {
+            transform.BroadcastMessage("WeNeedHealing", 7);
+            Destroy(col.transform.gameObject);
+        }
+
+    }
 	/*
 		1: Pistol Ammo
 		2: Shotgun
