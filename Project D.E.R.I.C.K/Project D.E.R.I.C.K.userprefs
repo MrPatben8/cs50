@@ -1,25 +1,24 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DuckAndDeath.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Codigo/Enemy.cs">
     <Files>
-      <File FileName="Assets/Codigo/RayShoot.cs" Line="21" Column="6" />
-      <File FileName="Assets/PauseMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets/Codigo/Enemy.cs" Line="5" Column="35" />
-      <File FileName="Assets/EnemyAnimator.cs" Line="1" Column="1" />
-      <File FileName="Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/AICharacterControl.cs" Line="1" Column="1" />
+      <File FileName="Assets/Codigo/MusicSelector.cs" Line="38" Column="42" />
       <File FileName="Assets/Health.cs" Line="1" Column="1" />
       <File FileName="Assets/AnimatedObject.cs" Line="1" Column="1" />
-      <File FileName="Assets/LevelGenerator.cs" Line="12" Column="25" />
+      <File FileName="Assets/LevelGenerator.cs" Line="1" Column="1" />
       <File FileName="Assets/Codigo/ShootAnimation.cs" Line="1" Column="1" />
       <File FileName="Assets/HUD.cs" Line="1" Column="1" />
       <File FileName="Assets/CollisionDetection.cs" Line="1" Column="1" />
-      <File FileName="Assets/SpreadRotate.cs" Line="10" Column="2" />
-      <File FileName="Assets/Standard Assets/Cameras/Scripts/LookatTarget.cs" Line="30" Column="44" />
+      <File FileName="Assets/SpreadRotate.cs" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Cameras/Scripts/LookatTarget.cs" Line="1" Column="1" />
       <File FileName="Assets/DuckAndDeath.cs" Line="1" Column="1" />
+      <File FileName="Assets/Codigo/Enemy.cs" Line="118" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/benhardy/Desktop/cs50/Project D.E.R.I.C.K/Assets/Codigo/MusicSelector.cs" line="21" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
