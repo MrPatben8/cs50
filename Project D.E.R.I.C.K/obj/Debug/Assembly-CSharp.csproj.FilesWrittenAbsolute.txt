@@ -14,3 +14,7 @@
 /Users/benhardy/Desktop/cs50/Project D.E.R.I.C.K/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/benhardy/Desktop/cs50/Project D.E.R.I.C.K/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/benhardy/Desktop/cs50/Project D.E.R.I.C.K/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/benhardy/Desktop/cs50/Project D.E.R.I.C.K/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/benhardy/Desktop/cs50/Project D.E.R.I.C.K/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/benhardy/Desktop/cs50/Project D.E.R.I.C.K/obj/Debug/Assembly-CSharp.dll
+/Users/benhardy/Desktop/cs50/Project D.E.R.I.C.K/obj/Debug/Assembly-CSharp.dll.mdb

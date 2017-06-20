@@ -252,12 +252,14 @@ public class RayShoot : MonoBehaviour {
 		Ray ray = new Ray(transform.position, transform.forward); //Draws a ray starting from this object to the front of the object
 		if (Physics.Raycast(ray, out hit, Mathf.Infinity, lyrmsk)){ //if the ray hits something output the data of that hit to the variable hit
 			if (hit.collider.transform.tag == "Enemy"){				//if the ray hits an object with tag Enemy then tell the Enemy to take damage
-				hit.collider.transform.gameObject.SendMessage("TakeDamage", Weapon[SW].Damage); //sends damage mesage to the gameobject of the collider that the ray hit
+				//hit.collider.transform.gameObject.SendMessage("TakeDamage", Weapon[SW].Damage); //sends damage mesage to the gameobject of the collider that the ray hit
+				SendDamageMessage(hit.collider, Weapon[SW].Damage);
 				GameObject enhit =  (GameObject)Instantiate(EnemyHit, hit.point, Quaternion.LookRotation(hit.normal)); //if the ray hits anything else then spawn a bullet hole
 				enhit.transform.position = enhit.transform.position + hit.normal/20;
 			}else{
-				GameObject bulhit =  (GameObject)Instantiate(BulletHit, hit.point, Quaternion.LookRotation(hit.normal)); //if the ray hits anything else then spawn a bullet hole
+				GameObject bulhit =  (GameObject)Instantiate(BulletHit, hit.point, Quaternion.LookRotation(hit.normal), hit.transform); //if the ray hits anything else then spawn a bullet hole
 				bulhit.transform.position = bulhit.transform.position + hit.normal/20;	
+				bulhit.transform.localScale = new Vector3(1/hit.transform.localScale.x, 1/hit.transform.localScale.x, 1/hit.transform.localScale.z);
 			}
 		}
 		if(SW == 1){ //if the weapon is the shotgun then draw 4 more rays
@@ -267,12 +269,14 @@ public class RayShoot : MonoBehaviour {
 				Ray ray2 = new Ray(transform.position, dir);
 				if (Physics.Raycast(ray2, out hit2, Mathf.Infinity, lyrmsk)){
 					if (hit2.collider.transform.tag == "Enemy"){
-						hit2.collider.transform.gameObject.SendMessage("TakeDamage", Weapon[SW].Damage);
+						//hit2.collider.transform.gameObject.SendMessage("TakeDamage", Weapon[SW].Damage);
+						SendDamageMessage(hit2.collider, Weapon[SW].Damage);
 						GameObject enhit =  (GameObject)Instantiate(EnemyHit, hit.point, Quaternion.LookRotation(hit.normal)); //if the ray hits anything else then spawn a bullet hole
 						enhit.transform.position = enhit.transform.position + hit.normal/20;
 					}else{
-						GameObject bulhit =  (GameObject)Instantiate(BulletHit, hit2.point, Quaternion.LookRotation(hit2.normal));
+						GameObject bulhit =  (GameObject)Instantiate(BulletHit, hit2.point, Quaternion.LookRotation(hit2.normal), hit.transform);
 						bulhit.transform.position = bulhit.transform.position + hit.normal/20;
+						bulhit.transform.localScale = new Vector3(1/hit.transform.localScale.x, 1/hit.transform.localScale.y, 1/hit.transform.localScale.z);
 					}
 				}
 			}
@@ -282,5 +286,11 @@ public class RayShoot : MonoBehaviour {
 		if(SW == 2 && Input.GetMouseButton(0)){ //if the weapon is the SMG then the corutine calls itself if the mouse button is held down
 			StartCoroutine(Fire());	
 		}
+	}
+
+	public void SendDamageMessage(Collider pos, int dmg){
+		//pos.transform.gameObject.SendMessage("TakeDamage", dmg);
+		Debug.Log("Hit Target: " + pos.transform.name);
+		pos.transform.gameObject.SendMessageUpwards("TakeDamage", dmg, SendMessageOptions.DontRequireReceiver);
 	}
 }
