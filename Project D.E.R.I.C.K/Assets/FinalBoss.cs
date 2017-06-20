@@ -81,7 +81,7 @@ public class FinalBoss : MonoBehaviour {
 	}
 	IEnumerator FireRate(){
 		Shoot ();
-		yield return new WaitForSeconds (1.0f/72.0f);
+		yield return new WaitForSeconds (1.0f/50.0f);
 		StartCoroutine (FireRate());
 	}
 
