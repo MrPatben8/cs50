@@ -41,6 +41,7 @@ public class FinalBoss : MonoBehaviour {
 	private int InitialHP;
 	private RaycastHit PubHit;
 	private bool Dead = false;
+	private float DifficultyScale;
 	void Start () {
 		InitialHP = TotalHP;
 		StartCoroutine (AttackMode());
@@ -52,7 +53,7 @@ public class FinalBoss : MonoBehaviour {
 	}
 
 	IEnumerator AttackMode(){
-		yield return new WaitForSeconds (Random.Range(5,15));
+		yield return new WaitForSeconds ((Random.Range(0,10)*DifficultyScale) + 5);
 		SpinSource.Stop ();
 		SpinSource.clip = SpinUp;
 		Spin = true;
@@ -109,6 +110,7 @@ public class FinalBoss : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
+		DifficultyScale = (float)((float)TotalHP / (float)InitialHP);
 		if (Time.timeScale == 0 || TotalHP<=0) {
 			SpinSource.mute = true;
 		} else {
@@ -117,8 +119,16 @@ public class FinalBoss : MonoBehaviour {
 		HpIndicator.text = ""+TotalHP;
 		if (Vulnerable) {
 			Shield.transform.localPosition = Vector3.Lerp (Shield.transform.localPosition, new Vector3 (0f, 3f, 0.5f), Time.deltaTime * 2);
+			BodyRotator.enabled = false;
+			ArmsRotator.enabled = false;
 		} else {
+			if (!Dead) {
+				BodyRotator.enabled = true;
+				ArmsRotator.enabled = true;
+			}
 			Shield.transform.localPosition = Vector3.Lerp (Shield.transform.localPosition, Vector3.zero, Time.deltaTime * 2);
+			BodyRotator.m_FollowSpeed = (float)((float)TotalHP/(float)InitialHP);
+			ArmsRotator.m_FollowSpeed = (float)((float)TotalHP/(float)InitialHP);
 		}
 
 		BodyRotator.m_FollowSpeed = (float)((float)TotalHP/(float)InitialHP);
