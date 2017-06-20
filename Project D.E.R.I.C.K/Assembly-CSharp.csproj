@@ -60,6 +60,7 @@
      <Compile Include="Assets\HUD.cs" />
      <Compile Include="Assets\Health.cs" />
      <Compile Include="Assets\LevelGenerator.cs" />
+     <Compile Include="Assets\Mine.cs" />
      <Compile Include="Assets\PauseMenu.cs" />
      <Compile Include="Assets\RandomObjectSelector.cs" />
      <Compile Include="Assets\Settings.cs" />

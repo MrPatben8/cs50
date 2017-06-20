@@ -258,7 +258,7 @@ public class RayShoot : MonoBehaviour {
 					GameObject enhit = (GameObject)Instantiate (EnemyHit, hit.point, Quaternion.LookRotation (hit.normal)); //if the ray hits anything else then spawn a bullet hole
 					enhit.transform.position = enhit.transform.position + hit.normal / 20;
 				} else {
-					SendDamageMessage (hit.collider, Weapon [SW].Damage);
+					SendDamageMessageBoss (hit.collider, Weapon [SW].Damage, hit);
 					GameObject bulhit =  (GameObject)Instantiate(BulletHit, hit.point, Quaternion.LookRotation(hit.normal), hit.transform); //if the ray hits anything else then spawn a bullet hole
 					bulhit.transform.position = bulhit.transform.position + hit.normal/20;	
 					bulhit.transform.localScale = new Vector3(1/hit.transform.localScale.x, 1/hit.transform.localScale.x, 1/hit.transform.localScale.z);
@@ -279,10 +279,10 @@ public class RayShoot : MonoBehaviour {
 						if (!hit2.collider.transform.name.Contains("Boss")) {
 							//hit2.collider.transform.gameObject.SendMessage("TakeDamage", Weapon[SW].Damage);
 							SendDamageMessage (hit2.collider, Weapon [SW].Damage);
-							GameObject enhit = (GameObject)Instantiate (EnemyHit, hit.point, Quaternion.LookRotation (hit.normal)); //if the ray hits anything else then spawn a bullet hole
-							enhit.transform.position = enhit.transform.position + hit.normal / 20;
+							GameObject enhit = (GameObject)Instantiate (EnemyHit, hit2.point, Quaternion.LookRotation (hit2.normal)); //if the ray hits anything else then spawn a bullet hole
+							enhit.transform.position = enhit.transform.position + hit2.normal / 20;
 						} else {
-							SendDamageMessage (hit2.collider, Weapon [SW].Damage);
+							SendDamageMessageBoss (hit2.collider, Weapon [SW].Damage, hit2);
 							GameObject bulhit =  (GameObject)Instantiate(BulletHit, hit2.point, Quaternion.LookRotation(hit2.normal), hit.transform);
 							bulhit.transform.position = bulhit.transform.position + hit.normal/20;
 							bulhit.transform.localScale = new Vector3(1/hit.transform.localScale.x, 1/hit.transform.localScale.y, 1/hit.transform.localScale.z);
@@ -306,5 +306,12 @@ public class RayShoot : MonoBehaviour {
 		//pos.transform.gameObject.SendMessage("TakeDamage", dmg);
 		Debug.Log("Hit Target: " + pos.transform.name);
 		pos.transform.gameObject.SendMessageUpwards("TakeDamage", dmg, SendMessageOptions.DontRequireReceiver);
+	}
+
+	public void SendDamageMessageBoss(Collider pos, int dmg, RaycastHit point){
+		//pos.transform.gameObject.SendMessage("TakeDamage", dmg);
+		Debug.Log("Hit Target: " + pos.transform.name);
+		pos.transform.gameObject.SendMessageUpwards("TakeDamage", dmg, SendMessageOptions.DontRequireReceiver);
+		pos.transform.gameObject.SendMessageUpwards ("ShotLocation", point);
 	}
 }

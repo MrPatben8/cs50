@@ -14,11 +14,23 @@ public class Settings : MonoBehaviour {
 	public Slider Bright;
 	public AudioMixer mix;
 	void Start () {
-	
+		if(PlayerPrefs.GetFloat("SFX") == null)
+			PlayerPrefs.SetFloat ("SFX", 0.0f);
+		if(PlayerPrefs.GetFloat("Bright") == null)
+			PlayerPrefs.SetFloat ("Bright", 0.4f);
+		if(PlayerPrefs.GetFloat("Music") == null)
+			PlayerPrefs.SetFloat ("Music", 0.0f);
+		
+		SFX.value = PlayerPrefs.GetFloat ("SFX");
+		Bright.value = PlayerPrefs.GetFloat ("Bright");
+		Music.value = PlayerPrefs.GetFloat ("Music");
 	}
 
 	public void Sett(){
 		setti = !setti;
+		PlayerPrefs.SetFloat ("SFX", SFX.value);
+		PlayerPrefs.SetFloat ("Bright", Bright.value);
+		PlayerPrefs.SetFloat ("Music", Music.value);
 	}
 	
 	// Update is called once per frame
