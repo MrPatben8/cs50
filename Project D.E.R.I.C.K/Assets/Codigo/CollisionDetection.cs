@@ -14,35 +14,31 @@ public class CollisionDetection : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col){
-		if(col.transform.name == "ShotgunPickup"){
+		if(col.transform.name.Contains ("ShotgunPickup")){
 			transform.BroadcastMessage("Pickup", 2);
 			Destroy(col.transform.gameObject);
 		}
-		if(col.transform.name == "SMGPickup"){
+		if(col.transform.name.Contains("SMGPickup")){
 			transform.BroadcastMessage("Pickup", 4);
 			Destroy(col.transform.gameObject);
 		}
-        if(col.transform.name == "PistolAmmo"){
+		if(col.transform.name.Contains("PistolAmmo")){
             transform.BroadcastMessage("MoreAmmoPlease", 1);
             Destroy(col.transform.gameObject);
         }
-        if (col.transform.name == "ShotgunAmmo")
-        {
+		if (col.transform.name.Contains("ShotgunAmmo")){
             transform.BroadcastMessage("MoreAmmoPlease", 3);
             Destroy(col.transform.gameObject);
         }
-        if (col.transform.name == "SMGAmmo")
-        {
+		if (col.transform.name.Contains("SMGAmmo")){
             transform.BroadcastMessage("MoreAmmoPlease", 5);
             Destroy(col.transform.gameObject);
         }
-        if (col.transform.name == "HealthPack")
-        {
+		if (col.transform.name.Contains("HealthPack")){
             transform.BroadcastMessage("WeNeedHealing", 6);
             Destroy(col.transform.gameObject);
         }
-        if (col.transform.name == "ArmorPack")
-        {
+		if (col.transform.name.Contains("ArmorPack")){
             transform.BroadcastMessage("WeNeedHealing", 7);
             Destroy(col.transform.gameObject);
         }
