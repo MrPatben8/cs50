@@ -93,6 +93,7 @@
     <Compile Include="Assets\Codigo\Spawner.cs" />
     <Compile Include="Assets\Codigo\SpreadRotate.cs" />
     <Compile Include="Assets\Codigo\TextrueAdjust.cs" />
+    <Compile Include="Assets\MainMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Mapas\Metro3\Materials\StandardNoFog.shader" />
