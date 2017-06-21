@@ -282,13 +282,13 @@ public class RayShoot : MonoBehaviour {
 						} else {
 							SendDamageMessageBoss (hit2.collider, Weapon [SW].Damage, hit2);
 							GameObject bulhit =  (GameObject)Instantiate(BulletHit, hit2.point, Quaternion.LookRotation(hit2.normal), hit.transform);
-							bulhit.transform.position = bulhit.transform.position + hit.normal/20;
-							bulhit.transform.localScale = new Vector3(1/hit.transform.localScale.x, 1/hit.transform.localScale.y, 1/hit.transform.localScale.z);
+							bulhit.transform.position = bulhit.transform.position + hit2.normal/20;
+							bulhit.transform.localScale = new Vector3(1/hit2.transform.localScale.x, 1/hit2.transform.localScale.y, 1/hit2.transform.localScale.z);
 						}
 					}else{
-						GameObject bulhit =  (GameObject)Instantiate(BulletHit, hit2.point, Quaternion.LookRotation(hit2.normal), hit.transform);
-						bulhit.transform.position = bulhit.transform.position + hit.normal/20;
-						bulhit.transform.localScale = new Vector3(1/hit.transform.localScale.x, 1/hit.transform.localScale.y, 1/hit.transform.localScale.z);
+						GameObject bulhit =  (GameObject)Instantiate(BulletHit, hit2.point, Quaternion.LookRotation(hit2.normal), hit2.transform);
+						bulhit.transform.position = bulhit.transform.position + hit2.normal/20;
+						bulhit.transform.localScale = new Vector3(1/hit2.transform.localScale.x, 1/hit2.transform.localScale.y, 1/hit2.transform.localScale.z);
 					}
 				}
 			}
