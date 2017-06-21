@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BossTrigger.cs" />
      <Compile Include="Assets\Codigo\AnimatedObject.cs" />
      <Compile Include="Assets\Codigo\Barricada.cs" />
      <Compile Include="Assets\Codigo\CollisionDetection.cs" />
