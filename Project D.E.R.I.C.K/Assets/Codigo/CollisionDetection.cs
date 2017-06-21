@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class CollisionDetection : MonoBehaviour {
 
 	// Use this for initialization
+	public Rigidbody rig;
+	public FirstPersonController fir;
+	public CharacterController cha;
 	void Start () {
 	
 	}
@@ -11,6 +15,29 @@ public class CollisionDetection : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	void OnTriggerStay(Collider col){
+		/*if (col.transform.tag == "Ladder") {
+			if (Input.GetKey (KeyCode.W)) {
+				fir.enabled = false;
+				rig.isKinematic = true;
+				cha.enabled = false;
+				Vector3 pos = transform.position;
+				pos.y += 0.1f;
+				transform.position = pos;
+				Debug.Log ("GOING UP");
+			}
+			//rig.isKinematic = false;
+			//fir.enabled = true;
+			//cha.enabled = true;
+		}*/
+	}
+
+	void OnTriggerExit(Collider col){
+		if (col.transform.tag == "Ladder") {
+
+		}
 	}
 
 	void OnTriggerEnter(Collider col){

@@ -30,7 +30,7 @@ public class MainMenu : MonoBehaviour {
 			aud.time = 15.5f;
 		}
 		transform.RotateAround (transform.parent.position, Vector3.down, 0.5f);
-		if (aud.time > 15.5f) { //15.6
+		if (aud.time > 15.6f) { //15.6
 			if (flash)
 				StartCoroutine (Flash ());
 			flash = false;
@@ -49,7 +49,7 @@ public class MainMenu : MonoBehaviour {
 		RenderSettings.ambientLight = Color.black;
 		Boss.SetActive (true);
 		float x = 0;
-		while (x < 1.7f) {
+		while (x < 1.65f) {
 			float c = Random.Range (0.01f, 0.2f);
 			yield return new WaitForSeconds (c);
 			x += c;

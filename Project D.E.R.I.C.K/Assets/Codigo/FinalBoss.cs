@@ -52,10 +52,12 @@ public class FinalBoss : MonoBehaviour {
 	private bool LaColSwap;
 
 	void Start () {
-		InitialHP = TotalHP;
 		StartCoroutine (AttackMode());
 		StartCoroutine (FireRate());
 		StartCoroutine (StrobeLasers());
+		BodyRotator.m_FollowSpeed = 0;
+		ArmsRotator.m_FollowSpeed = 0;
+		InitialHP = TotalHP;
 		SpinSource.Stop ();
 		SpinSource.clip = SpinStatic;
 		SpinSource.loop = true;
@@ -68,7 +70,15 @@ public class FinalBoss : MonoBehaviour {
 			Vector3 pos = new Vector3(transform.position.x-m, transform.position.y, transform.position.z-n);
 			Instantiate (Mine, pos, Quaternion.identity);
 		}
+	}
 
+	public void PlaceMines(){
+		for(int i = 0; i<NumberOfMines; i++){
+			float m = Random.Range (-RoomSize, RoomSize);
+			float n = Random.Range (-RoomSize, RoomSize);
+			Vector3 pos = new Vector3(transform.position.x-m, transform.position.y, transform.position.z-n);
+			Instantiate (Mine, pos, Quaternion.identity);
+		}
 	}
 
 	IEnumerator AttackMode(){
