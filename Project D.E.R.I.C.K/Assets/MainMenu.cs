@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+
 public class MainMenu : MonoBehaviour {
 
 	public AudioSource aud;
@@ -25,6 +26,9 @@ public class MainMenu : MonoBehaviour {
 
 	void Update ()
 	{
+		if (aud.time < 15.5f && Input.anyKeyDown) {
+			aud.time = 15.5f;
+		}
 		transform.RotateAround (transform.parent.position, Vector3.down, 0.5f);
 		if (aud.time > 15.5f) { //15.6
 			if (flash)
